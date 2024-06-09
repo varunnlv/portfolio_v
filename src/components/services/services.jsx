@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./services.scss";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 const variants = {
     initial: {
@@ -35,8 +35,6 @@ const sliderVariants2 = {
 
 const Services = () => {
     const ref = useRef();
-
-    const isInView = useInView(ref, { margin: "-100px" });
 
     return (
         <motion.div
@@ -79,20 +77,20 @@ const Services = () => {
                 initial="initial"
                 animate="animate"
             >
-                <img src="./html-5.png" height={100} width={100} />
-                <img src="./css-3.png" height={100} width={100} />
-                <img src="./js.png" height={100} width={100} />
+                <img alt="" src="./html-5.png" height={100} width={100} />
+                <img alt="" src="./css-3.png" height={100} width={100} />
+                <img alt="" src="./js.png" height={100} width={100} />
 
 
-                <img src="./java.png" height={100} width={100} />
-                <img src="./mysql.png" height={100} width={100} />
+                <img alt="" src="./java.png" height={100} width={100} />
+                <img alt="" src="./mysql.png" height={100} width={100} />
 
 
 
-                <img src="./mongodb.png" height={100} width={100} />
-                <img src="./nodejs.png" height={100} width={100} />
+                <img alt="" src="./mongodb.png" height={100} width={100} />
+                <img alt="" src="./nodejs.png" height={100} width={100} />
 
-                <img src="./spring-boot.png" height={100} width={100} />
+                <img alt="" src="./spring-boot.png" height={100} width={100} />
 
             </motion.div>
 
