@@ -16,16 +16,11 @@ const Navbar = () => {
                     Varun's Portfolio
                 </motion.span>
                 <div className="social">
-                    {/* <a href="#">
-                        <img src="/facebook.png" alt="" />
-                    </a>
-                    <a href="#">
-                        <img src="/instagram.png" alt="" />
-                    </a> */}
-                    <a href="#">
+                  
+                    <a href="https://expense-v-tracker.netlify.app/">
                         <img src="/github.png" alt="" />
                     </a>
-                    <a href="#">
+                    <a href="https://filmpire-v.netlify.app/">
                         <img src="/linkedin.png" alt="" />
                     </a>
                 </div>
