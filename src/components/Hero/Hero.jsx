@@ -66,8 +66,6 @@ const Hero = () => {
 
         return interval; // Return the interval ID for cleanup
     };
-
-    const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const titles = [
         'Full Stack ',
         'Frontend ',
