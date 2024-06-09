@@ -32,12 +32,6 @@ const items = [
 
 // ... (Your existing components)
 
-const CustomNextArrow = ({ onClick }) => (
-    <button className="customNextArrow" onClick={onClick}>
-        Next Image
-    </button>
-);
-
 const settings = {
     dots: true,
     infinite: true,
@@ -46,21 +40,6 @@ const settings = {
     slidesToScroll: 1,
     // Replace with your custom dots container component
 };
-
-
-const CustomDots = ({ children }) => (
-    <div className="customDotsContainer">
-        {children}
-        {/* Add any custom styling for dots container here */}
-    </div>
-);
-
-const Single = ({ item }) => {
-    const ref = useRef();
-
-    const { scrollYProgress } = useScroll({
-        target: ref,
-    });
 
     const y = useTransform(scrollYProgress, [0, 3], [-200, 200]);
 
