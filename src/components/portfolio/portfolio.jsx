@@ -41,6 +41,9 @@ const settings = {
     // Replace with your custom dots container component
 };
 
+
+const Portfolio = () => {
+
     const y = useTransform(scrollYProgress, [0, 3], [-200, 200]);
 
     return (
