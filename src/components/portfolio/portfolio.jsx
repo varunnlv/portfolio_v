@@ -41,44 +41,6 @@ const settings = {
     // Replace with your custom dots container component
 };
 
-
-const Portfolio = () => {
-
-    const y = useTransform(scrollYProgress, [0, 3], [-200, 200]);
-
-    return (
-        <section >
-            <div className="container">
-                <div className="wrapper">
-                    {/* <motion.div className="imageContainer" ref={ref} style={{ y }}>
-                        
-                        <Slider {...settings}>
-                    </motion.div> */}
-
-                    <motion.div className="textContainer" style={{ y }}>
-                        <Slider {...settings}>
-                            {item.images.map((image, index) => (
-                                <img key={index} src={image} alt="" />
-                            ))}
-                        </Slider>
-                        {/* <img src={item.images} alt="" /> */}
-                        <h2>{item.title}</h2>
-                        <p>{item.desc}</p>
-                        <p>{item.desc}</p>
-                        <p>{item.desc}</p>
-                        <p>{item.desc}</p>
-                        <p>{item.desc}</p>
-                        <button>See Demo</button>
-                    </motion.div>
-                </div>
-
-
-
-            </div>
-        </section>
-    );
-};
-
 const Portfolio = () => {
     const ref = useRef();
 
