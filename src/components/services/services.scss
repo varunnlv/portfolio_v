@@ -1,0 +1,192 @@
+.services {
+    background: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+
+    .textContainer {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+        padding: 0 20px;
+
+        p {
+            font-weight: 200;
+            font-size: 20px;
+            color: gray;
+            text-align: right;
+            margin: 0;
+        }
+
+        hr {
+            width: 50%;
+            border: none;
+            border-top: 0.5px solid gray;
+            margin: 0;
+        }
+    }
+
+    .titleContainer {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+
+        .title {
+            display: flex;
+            align-items: center;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: 100;
+                margin: 0;
+            }
+        }
+    }
+
+    .slidingTextContainer {
+        flex: 2;
+        display: flex;
+        height: 100px;
+        color: #eddedee1;
+        width: 50%;
+        font-weight: bold;
+        gap: 150px;
+    }
+
+
+    .listContainer {
+        flex: 3;
+        display: flex;
+        max-width: 1366px;
+        margin: auto;
+
+        // @include mobile {
+        //   flex-direction: column;
+        //   width: 100%;
+        // }
+
+
+        .box {
+            padding: 50px;
+            border: 0.5px solid rgb(44, 43, 43);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            //   @include mobile {
+            //     border: none;
+            //     align-items: center;
+            //     gap: 20px;
+            //     padding: 10px;
+        }
+
+        p {
+            // @include mobile {
+            //   display: none;
+            // }
+        }
+
+        button {
+            padding: 10px;
+            background-color: orange;
+            border: none;
+            cursor: pointer;
+
+            // @include mobile {
+            //   background-color: transparent;
+            //   border: 1px solid orange;
+            //   border-radius: 5px;
+            //   color: orange;
+            //   width: 50%;
+            //   padding: 5px;
+            // }
+        }
+
+    }
+
+
+
+
+    @media (max-width: 768px) {
+        .textContainer {
+            justify-content: center;
+        }
+
+        .textContainer {
+            display: none;
+        }
+
+
+        .listContainer {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            /* Arrange boxes in column */
+            align-items: center;
+            /* Center align boxes */
+            gap: 20px;
+            padding: 20px;
+            overflow-x: auto;
+            /* Add horizontal scrollbar */
+        }
+
+        .box {
+            padding: 20px;
+            border: 0.5px solid rgb(44, 43, 43);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 80vw;
+            /* Adjust box width */
+            max-width: 500px;
+            /* Set max-width for better layout */
+
+            p {
+                margin: 0;
+            }
+
+            button {
+                padding: 10px 20px;
+                background-color: orange;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .quotation {
+            display: none;
+        }
+
+        .titleContainer {
+            align-items: flex-start;
+        }
+
+        .title {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .slidingTextContainer {
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .listContainer {
+            padding: 10px;
+        }
+
+        .quote {
+            display: none;
+            /* Hide the top quotation */
+        }
+    }
+}

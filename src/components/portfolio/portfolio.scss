@@ -1,0 +1,265 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.portfolio {
+    background: white;
+
+    .progress {
+        position: sticky;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        text-align: center;
+        color: rgb(236, 236, 236);
+        font-size: 36px;
+        background: #111132;
+        z-index: 20;
+
+        .progressBar {
+            height: 10px;
+            background-color: orange;
+        }
+    }
+
+    .progress1 {
+        position: sticky;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 36px;
+        background: white;
+        z-index: 10;
+    }
+
+    .container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+        z-index: 9;
+
+        .wrapper {
+            max-width: 1366px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .textContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                height: 1000px;
+                background-color: rgba(173, 216, 230, 0.15);
+                border-radius: 5%;
+                overflow: hidden;
+                position: relative;
+
+                &:hover {
+                    overflow-y: scroll;
+                    background-color: rgba(255, 255, 255, 0.963);
+                    border: 3px solid rgb(236, 113, 72);
+                }
+
+                &::-webkit-scrollbar {
+                    width: 0;
+                }
+
+                img {
+                    width: 100%;
+                    height: 700px;
+                    margin-top: 12%;
+                    object-fit: cover;
+                    border-radius: 5%;
+                }
+
+                h2 {
+                    font-size: 40px;
+                }
+
+                p {
+                    color: rgb(137, 132, 132);
+                    font-size: 20px;
+                }
+
+                button {
+                    background-color: orange;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 10px;
+                    width: 200px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .ui-container {
+        margin: 0 auto;
+        max-width: 80%;
+        padding: 20px;
+    }
+
+    .slider-container {
+        max-width: 50%;
+    }
+
+    .slider-container img {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .ui-container h2 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .ui-container p {
+        margin-top: 10px;
+        line-height: 1.6;
+    }
+
+    .ui-container button {
+        z-index: 19;
+        background-color: #737980;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 1024px) {
+        .progress {
+            padding-top: 30px;
+            font-size: 30px;
+        }
+
+        .container {
+            .wrapper {
+                flex-direction: column;
+                align-items: center;
+
+                .textContainer {
+                    width: 80%;
+                    img {
+                        height: 500px;
+                    }
+
+                    h2 {
+                        font-size: 30px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                    }
+
+                    button {
+                        width: 100%;
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+
+        .ui-container {
+            max-width: 90%;
+            padding: 10px;
+        }
+
+        .slider-container {
+            max-width: 70%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .progress {
+            padding-top: 30px;
+            font-size: 24px;
+        }
+
+        .container {
+            .wrapper {
+                flex-direction: column;
+                align-items: center;
+
+                .textContainer {
+                    width: 80%;
+                    img {
+                        height: 400px;
+                    }
+
+                    h2 {
+                        font-size: 24px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+
+                    button {
+                        width: 100%;
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+
+        .ui-container {
+            max-width: 95%;
+            padding: 10px;
+        }
+
+        .slider-container {
+            max-width: 80%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .progress {
+            padding-top: 20px;
+            font-size: 18px;
+        }
+
+        .container {
+            .wrapper {
+                .textContainer {
+                    width: 90%;
+                    img {
+                        height: 250px;
+                    }
+
+                    h2 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+
+                    button {
+                        width: 100%;
+                        padding: 6px;
+                    }
+                }
+            }
+        }
+
+        .ui-container {
+            max-width: 100%;
+            padding: 5px;
+        }
+
+        .slider-container {
+            max-width: 100%;
+        }
+    }
+}

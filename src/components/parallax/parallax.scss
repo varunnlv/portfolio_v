@@ -1,0 +1,117 @@
+.parallax {
+    max-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    position: relative;
+
+    .Righttab {
+        max-height: 5000px;
+        width: 100vw;
+        background-color: transparent;
+        background-position: bottom;
+        overflow-x: hidden;
+        z-index: 10;
+        color: rgb(99, 97, 97);
+        top: 0;
+
+        .stars {
+            background-image: url("../../../public/stars.png");
+            background-size: cover;
+            width: 100vw;
+            height: 90%;
+            position: fixed;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            background-attachment: fixed;
+        }
+
+        .slidingTextContainer {
+            position: absolute;
+            font-size: 50vh;
+            bottom: 120px;
+            white-space: nowrap;
+            color: #ffffff09;
+            width: 100%;
+            z-index: 9;
+            font-weight: bold;
+        }
+    }
+
+    .Righttab::-webkit-scrollbar {
+        width: 0;
+        display: none;
+    }
+
+    h1 {
+        font-size: 100px;
+        color: rgb(77, 74, 74);
+        position: relative;
+        z-index: 2;
+        margin: 20px 0;
+    }
+
+    .Righttab1 {
+        width: 30vw;
+        height: 100vh;
+        overflow-y: scroll;
+        color: rgb(150, 145, 145);
+        margin-left: 70vw;
+        position: absolute;
+        background-color: rgba(166, 168, 168, 0.15);
+        border-radius: 2%;
+        z-index: 20;
+    }
+
+    .mountains {
+        background-image: url("../../../public/mountains.png");
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: 18;
+        top: 0;
+        left: 0;
+    }
+
+    @media (max-width: 1024px) {
+        .Righttab1 {
+            width: 40vw;
+            margin-left: 60vw;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .Righttab1 {
+            width: 50vw;
+            margin-left: 50vw;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .Righttab1 {
+            width: 90vw;
+            margin-left: 20vw;
+        }
+
+        .mountains {
+            display: none;
+        }
+
+        .slidingTextContainer {
+            font-size: 20vh;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+    }
+}
+
+.parallax::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
