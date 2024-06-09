@@ -105,8 +105,6 @@ const Contact = () => {
                     <input type="email" required placeholder="Email" name="email" />
                     <textarea rows={8} placeholder="Message" name="message" />
                     <button>Submit</button>
-                    {error && "Error"}
-                    {success && "Success"}
                 </motion.form>
             </div>
         </motion.div>
