@@ -80,14 +80,8 @@ const Hero = () => {
             element.dataset.textValue = element.innerText;
             intervals.push(changeTextLetter(element)); // Start the animation and store the interval ID
         });
-
-        const interval = setInterval(() => {
-            setCurrentTextIndex((prevIndex) => (prevIndex + 1) % titles.length);
-        }, 1000); // Change text every 3 seconds
-
         return () => {
             intervals.forEach(clearInterval); // Clear all intervals on component unmount
-            clearInterval(interval)
         };
     }, []);
 
