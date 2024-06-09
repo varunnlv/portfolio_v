@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./portfolio.scss";
-import { motion, useScroll, useSpring, useTransform, useAnimation } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import Slider from "react-slick";
 
 const items = [
