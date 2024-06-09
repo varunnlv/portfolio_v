@@ -21,10 +21,6 @@ const variants = {
 const Contact = () => {
     const ref = useRef();
     const formRef = useRef();
-    const [error, setError] = useState(false);
-    const [success, setSuccess] = useState(false);
-
-    const isInView = useInView(ref, { margin: "-100px" });
 
     // const sendEmail = (e) => {
     //     e.preventDefault();
