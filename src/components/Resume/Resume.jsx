@@ -57,6 +57,7 @@ const Resume = () => {
             <motion.div className="slidingTextContainer1">
                 <motion.img
                     src="./NETINTI LAXMIVASANTHVARUN.png"
+                    alt="" 
                     height={700}
                     width={500}
                     className="staticImage"
@@ -68,12 +69,12 @@ const Resume = () => {
                     initial="initial"
                     animate="animate"
                 >
-                    <img src="./jsc.png" height={200} width={300} />
-                    <img src="./jsc.png" height={200} width={300} />
-                    <img src="./jsc.png" height={200} width={300} />
-                    <img src="./jsc.png" height={200} width={300} />
-                    <img src="./jsc.png" height={200} width={300} />
-                    <img src="./jsc.png" height={200} width={300} />
+                    <img alt="" src="./jsc.png" height={200} width={300} />
+                    <img alt="" src="./jsc.png" height={200} width={300} />
+                    <img alt="" src="./jsc.png" height={200} width={300} />
+                    <img alt="" src="./jsc.png" height={200} width={300} />
+                    <img alt="" src="./jsc.png" height={200} width={300} />
+                    <img alt="" src="./jsc.png" height={200} width={300} />
                 </motion.div>
             </motion.div>
         </motion.div>
