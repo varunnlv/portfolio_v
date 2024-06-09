@@ -36,8 +36,6 @@ const sliderVariants2 = {
 const Resume = () => {
     const ref = useRef();
 
-    const isInView = useInView(ref, { margin: "-100px" });
-
     return (
         <motion.div
             className="services1"
