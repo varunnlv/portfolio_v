@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './Hero.scss';
 import { motion } from 'framer-motion';
 
@@ -66,11 +66,6 @@ const Hero = () => {
 
         return interval; // Return the interval ID for cleanup
     };
-    const titles = [
-        'Full Stack ',
-        'Frontend ',
-        'Backend'
-    ];
 
     useEffect(() => {
         const animTexts = document.querySelectorAll('.animated-text');
