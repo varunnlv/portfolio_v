@@ -10,8 +10,6 @@ const Parallax = ({ type }) => {
         offset: ["start start", "end start"],
     });
 
-    const yText = useTransform(scrollYProgress, [0, 1], ["0%", "-400%"]);
-    const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
     const sliderVariants = {
         initial: {
@@ -19,21 +17,6 @@ const Parallax = ({ type }) => {
         },
         animate: {
             x: "-5%",
-            transition: {
-                repeat: Infinity,
-                repeatType: "mirror",
-
-                duration: 10,
-            },
-        },
-    };
-
-    const sliderVariants1 = {
-        initial: {
-            z: 0,
-        },
-        animate: {
-            z: "100%",
             transition: {
                 repeat: Infinity,
                 repeatType: "mirror",
@@ -68,7 +51,7 @@ const Parallax = ({ type }) => {
                     initial="initial"
                     animate="animate"
                 >
-                    <img src="./stars.png" />
+                    <img  alt="" src="./stars.png" />
                 </motion.div>
 
             </motion.div>
