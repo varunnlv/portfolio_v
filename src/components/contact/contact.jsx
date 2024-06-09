@@ -1,6 +1,6 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import "./contact.scss";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 const variants = {
